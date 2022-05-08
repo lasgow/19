@@ -70,7 +70,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/lasgow/19/tree/main/Assets/urun-gorselleri/urundurumu1.png)
-  ![Screenshot 2]https://github.com/lasgow/19/tree/main/Assets/urun-gorselleri/urun-durumu2.png)
+  ![Screenshot 2](https://github.com/lasgow/19/blob/8199d2f545b2fbabd0200c5abbdefeee83687087/urun-gorselleri/urun-durumu2.png)
 
 - **Sprint Review**: 
 -Alınan kararlar: 
