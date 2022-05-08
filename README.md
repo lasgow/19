@@ -19,11 +19,11 @@ Takım 19
 ## Ürün Açıklaması
 
 - Oyunumuz runner türünde olup, yoldaki kapılardan geçerek, toplanabilir önemli şeyleri toplayarak ve bugları yok ederek oyun yaratma oyunudur.
-+Oyunumuzun türünü, yolda topladığımız +experience kutularını sırtımızda stackleyip, onları bir köprü parçası olarak kullanarak belirleyebiliyoruz.
-+Kendimize 3D Artist, Game Developerlar arasından bir ekip kuruyoruz. (bizi takip ediyorlar)
-+Oyunda buglara karşı mücadele veriyoruz.
-+Toplanabilir Collectiblelar ile masamızı ve bilgisayarımızı upgrade edebiliyoruz.
-+Tercihli kapılardan geçerek Main Karakterimizi seçebiliyoruz.
+-Oyunumuzun türünü, yolda topladığımız +experience kutularını sırtımızda stackleyip, onları bir köprü parçası olarak kullanarak belirleyebiliyoruz.
+-Kendimize 3D Artist, Game Developerlar arasından bir ekip kuruyoruz. (bizi takip ediyorlar)
+-Oyunda buglara karşı mücadele veriyoruz.
+-Toplanabilir Collectiblelar ile masamızı ve bilgisayarımızı upgrade edebiliyoruz.
+-Tercihli kapılardan geçerek Main Karakterimizi seçebiliyoruz.
 
 Bu verdiğimiz kararlar doğrultusunda oyunun endgame aşamasında "Publish Game" kısmına geliyoruz.
 Kameramız elimizdeki telefona doğru yakınlaşıyor, ve oyun içinde verdiğimiz kararlara uygun bir oyunun videosunu sahne içindeki model telefonumuza koyuyoruz. 
@@ -45,13 +45,13 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 ## Product Backlog URL
 
-[Miro Backlog Board] https://miro.com/app/board/uXjVO2yJuP4=/
+[Miro Backlog Board](https://miro.com/app/board/uXjVO2yJuP4=/)
 
 ---
 
 # Sprint 1
 
-- **Sprint Notları**: Takım üyelerinin tatil nedeniyle zaman çizelgelerinin uyuşmamasından dolayı sprint hedefi olarak yapılacak proje hakkında kesin bir karar verilmesi için bir toplantı yapılması kararlaştırılmıştır.06.05.2022 tarihinde discord üzerinden sesli yapılan bu toplantıda ana fikre ve izlenecek yol haritasına karar verilmiş ve sorumluluklar dağıtılmıştır.
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
@@ -61,25 +61,26 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack ve WhatsApp grubu üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats]
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1] 
-![Backlog 2] 
+![Backlog 1](https://github.com/lasgow/19/tree/main/Assetsurun-gorselleri/urundurumu1.png) 
+![Backlog 2]
 ![Backlog 3]
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1]
-  ![Screenshot 2]
+  ![Screenshot 1](https://github.com/lasgow/19/tree/main/Assetsurun-gorselleri/urundurumu1.png)
+  ![Screenshot 2]https://github.com/lasgow/19/tree/main/Assetsurun-gorselleri/urun-durumu2.png)
 
 - **Sprint Review**: 
-Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
-
+-Alınan kararlar: 
+- 1. sprintte takım üyelerinin tatil nedeniyle zaman çizelgelerinin uyuşmamasından dolayı sprint hedefi olarak yapılacak proje hakkında kesin bir karar verilmesi için bir toplantı yapılması kararlaştırılmıştır.
+- 06.02.22 tarihinde Discord üzerinden sesli yapılan bu toplantıda ana fikre ve izlenecek yol haritasına karar verilmiş ve sorumluluklar dağıtılmıştır
 - **Sprint Retrospective:**
-  - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır
-  - Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı
-  - Unit test'ler için ayrılan efor/saat arttırılmalı 
-
+  - Takım içindeki görev dağılımı yapılmıştır.
+  - Tüm takım üyelerince oyun fikri belirlenmiş ve oy birliğiyle kabul edilmiştir.
+  - Oyunun ilk sahnesi yapılmaya başlanmış olup, mobilde çalışan yönlendirme kodları PlayerScript.cs içine eklenmiştir.
+  - Oyunun ilk mekanikleri belirlenmiş ve ilk sahnede kullanılmıştır.
 -**Diğer Notlar**:
 - N/A
 
