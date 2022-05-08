@@ -45,13 +45,13 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVOSSCpsI=/)
+[Miro Backlog Board] https://miro.com/app/board/uXjVO2yJuP4=/
 
 ---
 
 # Sprint 1
 
-- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+- **Sprint Notları**: Takım üyelerinin tatil nedeniyle zaman çizelgelerinin uyuşmamasından dolayı sprint hedefi olarak yapılacak proje hakkında kesin bir karar verilmesi için bir toplantı yapılması kararlaştırılmıştır.06.05.2022 tarihinde discord üzerinden sesli yapılan bu toplantıda ana fikre ve izlenecek yol haritasına karar verilmiş ve sorumluluklar dağıtılmıştır.
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
@@ -61,16 +61,16 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack ve WhatsApp grubu üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats]
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog1.png) 
-![Backlog 2](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog2.png) 
-![Backlog 3](https://raw.githubusercontent.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/main/ProjectManagement/Sprint1Documents/backlog3.png)
+![Backlog 1] 
+![Backlog 2] 
+![Backlog 3]
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss1.png?raw=true)
-  ![Screenshot 2](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/productss2.png?raw=true)
+  ![Screenshot 1]
+  ![Screenshot 2]
 
 - **Sprint Review**: 
 Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
