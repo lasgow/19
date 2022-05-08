@@ -74,15 +74,14 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 - **Sprint Review**: 
 -Alınan kararlar: 
-- 1. sprintte takım üyelerinin tatil nedeniyle zaman çizelgelerinin uyuşmamasından dolayı sprint hedefi olarak yapılacak proje hakkında kesin bir karar verilmesi için bir toplantı yapılması kararlaştırılmıştır.
+- İlk sprintte takım üyelerinin tatil nedeniyle zaman çizelgelerinin uyuşmamasından dolayı sprint hedefi olarak yapılacak proje hakkında kesin bir karar verilmesi için bir toplantı yapılması kararlaştırılmıştır.
 - 06.02.22 tarihinde Discord üzerinden sesli yapılan bu toplantıda ana fikre ve izlenecek yol haritasına karar verilmiş ve sorumluluklar dağıtılmıştır
 - **Sprint Retrospective:**
   - Takım içindeki görev dağılımı yapılmıştır.
   - Tüm takım üyelerince oyun fikri belirlenmiş ve oy birliğiyle kabul edilmiştir.
   - Oyunun ilk sahnesi yapılmaya başlanmış olup, mobilde çalışan yönlendirme kodları PlayerScript.cs içine eklenmiştir.
   - Oyunun ilk mekanikleri belirlenmiş ve ilk sahnede kullanılmıştır.
--**Diğer Notlar**:
-- N/A
+- **Diğer Notlar**:
 
 ---
 
