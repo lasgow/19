@@ -55,13 +55,13 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 380 puanlık backlog bulunmaktadır. 4 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 600 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 150 ile başlaması gerektiğine karar verildi.
 
 - **Backlog düzeni ve Story seçimleri**: Backlog'umuz ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. 
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack&Discord ve Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/OyunveUygulamaAkademisi/BootcampScrumTemplate/blob/main/ProjectManagement/Sprint1Documents/DailyScrumMeetingNotesSprint1.docx?raw=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-1st.png) 
@@ -81,8 +81,11 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   - Tüm takım üyelerince oyun fikri belirlenmiş ve oy birliğiyle kabul edilmiştir.
   - Oyunun ilk sahnesi yapılmaya başlanmış olup, mobilde çalışan yönlendirme kodları PlayerScript.cs içine eklenmiştir.
   - Oyunun ilk mekanikleri belirlenmiş ve ilk sahnede kullanılmıştır.
-- **Diğer Notlar**:
+  - GameAnalytics & Facebook reklam uygulamaları projeye entegre edilmiştir.
 
+- **Diğer Notlar**:
+  - Sprint başında 150 puanlık hedef gerçekleştirildi.
+  - Daily Scrum Toplantıları Word'e yazılıp GitHub'a aktarıldı.
 ---
 
 # Sprint 2
