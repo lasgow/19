@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     public Transform levelHolder;
     public bool isLevelRestarted = false;
     public int activeLevelID;
-
+    public GameObject player;
     private void Awake()
     {
         instance = this;
@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
         GameManager.GetMoney();
         levelHolder = transform.GetChild(0).transform;
         Application.targetFrameRate = 120;
-        LoadLevel(GetLevelID());
+        //LoadLevel(GetLevelID());
         
 
     }

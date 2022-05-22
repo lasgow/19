@@ -27,7 +27,7 @@ public class CompletePanel : MonoBehaviour
 
     }
 
-    public void OpenPanel(int levelID)
+    public void OpenPanel()
     {
         Elephant.LevelCompleted((LevelManager.GetLevelID() + 1));
         GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, (LevelManager.GetLevelID() + 1).ToString());
