@@ -65,12 +65,13 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-1st.png) 
-![Backlog 2]
+![Backlog 2](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-2nd.png) 
 ![Backlog 3]
 
-- **Ürün Durumu**: Ekran görüntüleri:
-  - ![Screenshot 1](https://github.com/lasgow/19/blob/main/urun-gorselleri/urundurumu1.png)
-  - ![Screenshot 2](https://github.com/lasgow/19/blob/8199d2f545b2fbabd0200c5abbdefeee83687087/urun-gorselleri/urun-durumu2.png)
+- **Ürün Durumu**: Oyundan Ekran Kayıtları:
+  - İlk Sprint Sonu: https://streamable.com/wf1tt4
+  - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
+  - Üçüncü Sprint Sonu: https://streamable.com/y1v4bo
 
 - **Sprint Review**: 
 -Alınan kararlar: 
@@ -89,8 +90,12 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ---
 
 # Sprint 2
-
-
+- İkinci sprintte Unity üzerine yoğunlaşarak, hedefe koyduğumuz 250 puanlık yoğun bir sprinti tamamladık. Bunlar şöyle;
+- Oyunun döngüsü tamamlandı. Amacı olan bir oyuna dönüştürüldü.
+- İkinci sprintte oyunumuzun mekaniklerini arttırıp varolanlarının da kodsal yönden geliştirmeleri yapıldı.
+- Level 1 %80 oranında tamamlandı.
+- Farklı assetler araştırılıp oyuna entegre edildi.
+- 250 Puanlık hedef gerçekleştirildi.
 ---
 
 # Sprint 3
