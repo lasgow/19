@@ -53,7 +53,7 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 - **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+- **Sprint içinde tamamlanması tahmin edilen puan**: 150 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 600 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 150 ile başlaması gerektiğine karar verildi.
 
@@ -61,17 +61,14 @@ Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iy
 
 Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack&Discord ve Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack&Discord ve Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1&2 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-1st.png) 
-![Backlog 2](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-2nd.png) 
+![Backlog 1](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-1st.png)  
 ![Backlog 3]
 
 - **Ürün Durumu**: Oyundan Ekran Kayıtları:
   - İlk Sprint Sonu: https://streamable.com/bc2zh4
-  - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
-  - Üçüncü Sprint Sonu: https://streamable.com/wf1tt4
 
 - **Sprint Review**: 
 -Alınan kararlar: 
@@ -90,6 +87,15 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ---
 
 # Sprint 2
+- **Sprint içinde tamamlanması tahmin edilen puan**: 250 Puan
+- - **Sprint board update**: Sprint board screenshotları: 
+- ![Backlog 2](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-2nd.png)
+[Sprint 1&2 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
+
+  - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
+  - Üçüncü Sprint Sonu: https://streamable.com/wf1tt4
+
+
 - İkinci sprintte Unity üzerine yoğunlaşarak, hedefe koyduğumuz 250 puanlık yoğun bir sprinti tamamladık. Bunlar şöyle;
 - Oyunun döngüsü tamamlandı. Amacı olan bir oyuna dönüştürüldü.
 - İkinci sprintte oyunumuzun mekaniklerini arttırıp varolanlarının da kodsal yönden geliştirmeleri yapıldı.
