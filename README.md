@@ -93,7 +93,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 - [Sprint 1&2 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
 
   - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
-  - Üçüncü Sprint Sonu: https://streamable.com/wf1tt4
+  - İkinci Sprint Sonu: https://streamable.com/wf1tt4
 
 
 - İkinci sprintte Unity üzerine yoğunlaşarak, hedefe koyduğumuz 250 puanlık yoğun bir sprinti tamamladık. Bunlar şöyle;
