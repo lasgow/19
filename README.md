@@ -69,9 +69,9 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ![Backlog 3]
 
 - **Ürün Durumu**: Oyundan Ekran Kayıtları:
-  - İlk Sprint Sonu: https://streamable.com/wf1tt4
+  - İlk Sprint Sonu: https://streamable.com/bc2zh4
   - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
-  - Üçüncü Sprint Sonu: https://streamable.com/y1v4bo
+  - Üçüncü Sprint Sonu: https://streamable.com/wf1tt4
 
 - **Sprint Review**: 
 -Alınan kararlar: 
