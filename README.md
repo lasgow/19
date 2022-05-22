@@ -90,7 +90,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 - **Sprint içinde tamamlanması tahmin edilen puan**: 250 Puan
 - - **Sprint board update**: Sprint board screenshotları: 
 - ![Backlog 2](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-2nd.png)
-[Sprint 1&2 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
+- [Sprint 1&2 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotesSprint1.docx?raw=true)
 
   - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
   - Üçüncü Sprint Sonu: https://streamable.com/wf1tt4
