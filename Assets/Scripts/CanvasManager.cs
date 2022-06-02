@@ -21,6 +21,9 @@ public class CanvasManager : MonoBehaviour
 
     [Header("UI Prefabs")]
     public TextMeshProUGUI collectValue;
+    [SerializeField] GameObject cpiBackground;
+    [SerializeField] GameObject cpiBackgroundDown;
+    [SerializeField] GameObject cpiBackgroundUp;
     private void Awake()
     {
         instance = this;
@@ -52,4 +55,13 @@ public class CanvasManager : MonoBehaviour
 
     }
 
+    public void CpiBackgroundUp()
+    {
+        cpiBackground.transform.DOMove(cpiBackgroundUp.transform.position, 0.5f);
+    }
+
+    public void CpiBackgroundDown()
+    {
+        cpiBackground.transform.DOMove(cpiBackgroundDown.transform.position, 0.5f);
+    }
 }

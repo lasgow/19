@@ -17,9 +17,11 @@ public class LevelManager : MonoBehaviour
     public bool isLevelRestarted = false;
     public int activeLevelID;
     public GameObject player;
+    private static GameObject blackScreen;
     private void Awake()
     {
         instance = this;
+        blackScreen = GameObject.FindGameObjectWithTag("BlackScreen");
     }
     void Start()
     {
@@ -61,8 +63,17 @@ public class LevelManager : MonoBehaviour
         return totalID;
     }
 
-    public static void LoadNextLevel()
+    public static void BlackScreen()
     {
+        blackScreen.GetComponent<Animator>().SetTrigger("BackgroundOn");
+    }
+
+    public static IEnumerator LoadNextLevel()
+    {
+        CanvasManager.instance.CpiBackgroundDown();
+        yield return new WaitForSeconds(0.33f);
+        BlackScreen();
+        yield return new WaitForSeconds(0.55f);
         int levelID = GetLevelID() + 1;
         int totalID = GetLevelTotalID() + 1;
         if (levelID >= instance.levels.Count)
@@ -80,7 +91,7 @@ public class LevelManager : MonoBehaviour
         instance.LogAchieveLevelEvent(levelID.ToString());
         Debug.Log(totalID);
         CompletePanel.instance.ClosePanel();
-        FailPanel.instance.ClosePanel();
+        //FailPanel.instance.ClosePanel();
     }
 
     public void LoadLevel(int index)
@@ -180,5 +191,10 @@ public class LevelManager : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         RestartCurrentLevel();
+    }
+
+    public void NextLevelBlackScreen()
+    {
+        StartCoroutine(LoadNextLevel());
     }
 }

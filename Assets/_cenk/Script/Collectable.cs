@@ -8,7 +8,11 @@ public class Collectable : MonoBehaviour
     [SerializeField] private GameObject highlightPlane;
     public void Collect()
     {
-        highlightPlane.SetActive(false);
+        if(highlightPlane != null)
+        {
+            highlightPlane.SetActive(false);
+        }
+        
         //CanvasManager.instance.CreateCollectTxt(LevelManager.instance.GetActiveLevel().player.transform.position,Color.green,"+"+touristValue);
     }
 }

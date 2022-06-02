@@ -6,6 +6,10 @@ public class ChooseDoor : MonoBehaviour
 {
     [SerializeField] GameObject otherDoor;
     [SerializeField] GameObject selectText;
+    [SerializeField] OnlineVideoLoader onlineVideoLoader;
+    [SerializeField] string doorVideoUrl;
+    [SerializeField] bool anyNextDoor;
+    [SerializeField] GameObject nextDoor;
     void Start()
     {
 
@@ -23,10 +27,16 @@ public class ChooseDoor : MonoBehaviour
         {
             otherDoor.GetComponent<BoxCollider>().enabled = false;
             selectText.gameObject.SetActive(false);
+            if (anyNextDoor)
+            {
+                nextDoor.gameObject.SetActive(true);
+            }
             transform.DOScale(Vector3.zero, 0.5f).OnComplete(() =>
             {
 
             });
+            onlineVideoLoader.videoUrl = doorVideoUrl;
+            onlineVideoLoader.VideoPlayerFunction();
         }
     }
 }

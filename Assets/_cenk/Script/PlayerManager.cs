@@ -48,6 +48,7 @@ public class PlayerManager : MonoBehaviour
     private float mouseX;
     private Vector3 move;
     [SerializeField] GameObject rawImage;
+
     private void Awake()
     {
         instance = this;
@@ -55,7 +56,6 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         pathFollower = transform.parent.GetComponent<PathCreation.Examples.PathFollower>();
-        animator = transform.GetChild(1).GetComponent<Animator>();
         activeModel = intern.gameObject;
         canRotate = true;
     }
@@ -164,13 +164,15 @@ public class PlayerManager : MonoBehaviour
         if(other.CompareTag("Finish"))
         {
             //transform.DOMoveX(0f, 0.25f);
+            animator.enabled = false;
             isFinished = true;
             canRotate = false;
             pathFollower.speed = 0;
+            transform.DOLocalMoveX(0, 0.25f);
             Camera.main.transform.DOLocalRotate(new Vector3(15, 0, 0), 1f);
             CompletePanel.instance.OpenPanel();
             rawImage.SetActive(true);
-            rawImage.transform.DOScale(new Vector3(0.115f, 0.115f, 0.115f), 1f);
+            rawImage.transform.DOScale(new Vector3(0.11f, 0.115f, 0.115f), 1f);
         }
         /*
          
@@ -340,7 +342,7 @@ public class PlayerManager : MonoBehaviour
             Destroy(transformParticle, 1f);
             pathFollower.speed = 7f;
             //
-            nameTag.SetText("VIKING");
+            nameTag.SetText("JR. DEV");
             touristCounter = 0;
         }
         if (touristCounter >= totalAmount && jrDeveloper.activeInHierarchy)
@@ -416,7 +418,7 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         canRotate = true;
         activeModel.transform.DOLocalMove(new Vector3(0, 0, 0), 0.1f).SetEase(Ease.Linear);
-        animator = currentModel.GetComponent<Animator>();
+        //animator = currentModel.GetComponent<Animator>();
         //animator.SetBool("Walk", true);
         //animator.SetTrigger("Spin");
     }
@@ -541,4 +543,5 @@ public class PlayerManager : MonoBehaviour
         DoTweenIncrease(pathFollower.speed, -8, 1f);
         Debug.Log("aaa");
     }
+
 }

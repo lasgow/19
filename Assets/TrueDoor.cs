@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class TrueDoor : MonoBehaviour
 {
+    [SerializeField] bool centerMid;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +23,13 @@ public class TrueDoor : MonoBehaviour
         {
             transform.DOScale(Vector3.zero, 0.5f).OnComplete(() => 
             {
+                other.transform.DORotate(Vector3.zero, 0.15f);
             });
-            
-            other.GetComponent<PlayerManager>().TrueDoor();
+            if(centerMid)
+            {
+                other.GetComponent<PlayerManager>().TrueDoor();
+            }
+           
         }
     }
 }

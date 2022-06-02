@@ -22,6 +22,11 @@ namespace PathCreation.Examples {
         MeshRenderer meshRenderer;
         Mesh mesh;
 
+        private void Start()
+        {
+            PathUpdated();
+        }
+
         protected override void PathUpdated () {
             if (pathCreator != null) {
                 AssignMeshComponents ();
