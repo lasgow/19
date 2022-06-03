@@ -121,7 +121,7 @@ public class PlayerManager : MonoBehaviour
             other.transform.DOMove(itemCollectRef.transform.position, 0.20f).SetEase(Ease.Linear).OnComplete(() =>
             {
                 Destroy(other.gameObject);
-
+                
             });
         }
 
@@ -174,79 +174,7 @@ public class PlayerManager : MonoBehaviour
             rawImage.SetActive(true);
             rawImage.transform.DOScale(new Vector3(0.11f, 0.115f, 0.115f), 1f);
         }
-        /*
-         
-        if (other.CompareTag("Loki"))
-        {
-            CanvasManager.instance.CreateCollectTxt(LevelManager.instance.GetActiveLevel().player.transform.position, Color.red, "-25");
-            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
-            if (canRotate)
-            {
-                FillBar(-25);
-            }
-
-
-        }
-
-        if (other.CompareTag("LokiBig"))
-        {
-            CanvasManager.instance.CreateCollectTxt(LevelManager.instance.GetActiveLevel().player.transform.position, Color.red, "-50");
-            MMVibrationManager.Haptic(HapticTypes.MediumImpact);
-            if (canRotate)
-            {
-                FillBar(-50);
-            }
-
-
-        }
-
-        if (other.CompareTag("Finish"))
-        {
-            
-            if(villager3D.activeInHierarchy)
-            {
-                FailPanel.instance.OpenPanel();
-                activeModel.GetComponent<Animator>().SetBool("Finish", true);
-                isFinished = true;
-                pathFollower.enabled = false;
-                other.enabled = false;
-            }
-            else
-            {
-                transform.GetChild(0).gameObject.SetActive(false);
-                isFinished = true;
-                
-                activeModel.GetComponent<Animator>().SetBool("Finish", true);
-                pathFollower.enabled = false;
-                other.enabled = false;
-                CompletePanel.instance.OpenPanel(LevelManager.GetLevelID());
-                MMVibrationManager.Haptic(HapticTypes.LightImpact);
-                
-            }
-
-            if (viking3D.activeInHierarchy)
-            {
-                other.transform.GetChild(3).gameObject.SetActive(true);
-
-            }
-            if (ragnar3D.activeInHierarchy)
-            {
-
-                other.transform.GetChild(2).gameObject.SetActive(true);
-            }
-            if (thor3D.activeInHierarchy)
-            {
-
-                other.transform.GetChild(1).gameObject.SetActive(true);
-            }
-            if (odin3D.activeInHierarchy)
-            {
-
-                other.transform.GetChild(0).gameObject.SetActive(true);
-            }
-
-        }
-        */
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -274,7 +202,7 @@ public class PlayerManager : MonoBehaviour
                 Destroy(transformParticle, 1f);
                 //
                 pathFollower.speed = 7f;
-                nameTag.SetText("VILLAGER");
+                nameTag.SetText("INTERN");
                 //villager3D.GetComponent<Animator>().SetBool("Walk", true);
 
                 touristCounter = (int)totalAmount - 5;
@@ -282,50 +210,30 @@ public class PlayerManager : MonoBehaviour
 
             if (developer.activeInHierarchy)
             {
-                /*
-                 
-                ragnar3D.SetActive(false);
-                ragnar3D.transform.DORotate((Vector3.zero), 0);
-                viking3D.SetActive(true);
-                */
                 StartCoroutine(ChangeActiveModel(jrDeveloper,developer));
                 var transformParticle = Instantiate(changeParticle[Random.Range(0, 1)], itemCollectRef.transform.position, Quaternion.identity);
                 transformParticle.transform.parent = itemCollectRef.transform;
                 Destroy(transformParticle, 1f);
                 //
                 pathFollower.speed = 7.5f;
-                nameTag.SetText("VIKING");
+                nameTag.SetText("JR. DEV");
 
                 touristCounter = (int)totalAmount - 5;
             }
 
             if (srDeveloper.activeInHierarchy)
             {
-                /*
-                
-                thor3D.SetActive(false);
-                thor3D.transform.DORotate((Vector3.zero), 0);
-                ragnar3D.SetActive(true);
-                 */
+
                 StartCoroutine(ChangeActiveModel(developer,srDeveloper));
-                //
-                nameTag.SetText("RAGNAR");
+                nameTag.SetText("GAME DEV.");
                 pathFollower.speed = 8f;
                 touristCounter = (int)totalAmount - 5;
             }
 
             if (gameGuru.activeInHierarchy)
             {
-                /*
-                 
-                odin3D.SetActive(false);
-                odin3D.transform.DORotate((Vector3.zero), 0);
-                thor3D.SetActive(true);
-                */
                 StartCoroutine(ChangeActiveModel(srDeveloper,gameGuru));
-                //
-                nameTag.SetText("THOR");
-                nameTag.SetText("THOR");
+                nameTag.SetText("SR. DEV");
                 pathFollower.speed = 9f;
                 touristCounter = (int)totalAmount - 5;
             }
@@ -356,7 +264,7 @@ public class PlayerManager : MonoBehaviour
             Destroy(transformParticle, 1f);
             //
             pathFollower.speed = 7.5f;
-            nameTag.SetText("RAGNAR");
+            nameTag.SetText("GAME DEV.");
             touristCounter = 0;
         }
 
@@ -371,27 +279,10 @@ public class PlayerManager : MonoBehaviour
             Destroy(transformParticle, 1f);
             //
             
-            nameTag.SetText("THOR");
+            nameTag.SetText("SR. DEV");
             pathFollower.speed = 8f;
             touristCounter = 0;
         }
-
-        if (touristCounter >= totalAmount && srDeveloper.activeInHierarchy)
-        {
-            //thor3D.SetActive(false);
-            //thor3D.transform.DORotate((Vector3.zero), 0);
-            //odin3D.SetActive(true);
-            StartCoroutine(ChangeActiveModel(gameGuru,srDeveloper));
-            var transformParticle = Instantiate(gameGuruParticle, itemCollectRef.transform.position, Quaternion.identity);
-            transformParticle.transform.parent = itemCollectRef.transform;
-            Destroy(transformParticle, 1f);
-            //
-            nameTag.SetText("THOR");
-            pathFollower.speed = 9f;
-            nameTag.SetText("ODIN");
-            touristCounter = 0;
-        }
-
         filledBar.fillAmount = touristCounter / totalAmount;
     }
     

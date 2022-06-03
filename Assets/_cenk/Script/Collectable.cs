@@ -8,7 +8,9 @@ public class Collectable : MonoBehaviour
     [SerializeField] private GameObject highlightPlane;
     public void Collect()
     {
-        if(highlightPlane != null)
+        Instantiate(GameManager.instance.explosion, transform.position, Quaternion.identity);
+        FindObjectOfType<AudioManager>().Play("Pop");
+        if (highlightPlane != null)
         {
             highlightPlane.SetActive(false);
         }

@@ -24,6 +24,11 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] GameObject cpiBackground;
     [SerializeField] GameObject cpiBackgroundDown;
     [SerializeField] GameObject cpiBackgroundUp;
+
+    [SerializeField] public TextMeshProUGUI cpiValue;
+    [SerializeField] public TextMeshProUGUI retentionValue;
+    [SerializeField] public TextMeshProUGUI totalDownloadValue;
+    [SerializeField] public TextMeshProUGUI playtimeValue;
     private void Awake()
     {
         instance = this;

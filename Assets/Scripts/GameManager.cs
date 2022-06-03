@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public static int population;
     public static int totalPopulation;
-    public TextMeshProUGUI totalPopulationText;
+    [SerializeField] public GameObject explosion;
     // Start is called before the first frame update
     private void Awake()
     {
