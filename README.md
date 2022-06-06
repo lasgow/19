@@ -24,6 +24,7 @@ Takım 19
 - YouTube Tutorialler, Google Akademi Eğitimleri gibi toplanabilirleri toplayıp Internlükten -> Senior Game Developerlığa kadar çıkmaya çalışıyoruz.
 - Yoldaki Buglardan kaçınmaya çalışıyoruz.
 - Oyunda ilk kodumuzu yazıyoruz. İlerleyen levelda Runner mekaniğinin ardından Top-Down oyunlarda Joystick kullanımını gösteriyoruz.
+- QuizTime adını verdiğimiz bölgede, seçenekli cevaplar arasında doğru seçeneği bulup sondaki ödüle gidebiliyoruz. Bu sayede oyuncuya oyun içinde bir eğitim de veriyoruz.
 - Tercihli kapılardan geçerek yapmak istediğimiz oyunu kendi kararlarımızla oluşturabiliyoruz.
 - Oluşturduğumuz oyunlarda kullanılan assetleri kapılardan geçerek alıp öğreniyoruz.
 - Kendimize 3D Artist, Game Designerlar arasından bir ekip kuruyoruz.
@@ -35,7 +36,7 @@ Takım 19
 - Mobilden oynanabilen yönlendirme mekaniği
 - Tercihli kapı mekanikleri
 - Oyunu yapacak ekibi toplama mekaniği
-- DoTween  - Unity in Video Player.
+- DoTween - Unity in Video Player.
 
 ## Hedef Kitle
 
@@ -95,7 +96,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
   - İkinci Sprint Ortası (19 Mayıs 2022): https://streamable.com/y1v4bo
   - İkinci Sprint Sonu: https://streamable.com/wf1tt4
 
-
+- **Sprint Review**: 
 - İkinci sprintte Unity üzerine yoğunlaşarak, hedefe koyduğumuz 250 puanlık yoğun bir sprinti tamamladık. Bunlar şöyle;
 - Oyunun döngüsü tamamlandı. Amacı olan bir oyuna dönüştürüldü.
 - İkinci sprintte oyunumuzun mekaniklerini arttırıp varolanlarının da kodsal yönden geliştirmeleri yapıldı.
@@ -105,5 +106,25 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ---
 
 # Sprint 3
+- ![Backlog 3](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-3rd.png)
+- [Sprint 1&2&3 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotes.docx?raw=true)
+-  Üçüncü Sprint Sonu: [Video İçin Tıklayın](https://drive.google.com/file/d/1ENp4mepnbnZJ1o_5SK5BOTjahWTmZ-W9/view)
 
+
+- **Sprint Review**: 
+- 2. sprintte yapılan hatalar üzerinden geçilmiş, mevcut sprinti eksiksiz tamamlamak için gerekli adımlar listelenmiştir.
+- Proje için gerekli particle effect ve sesler için araştırmas yapılıp karar verilen dosyalar oyuna eklenmiştir.
+- Oyunun 2 ve 3. seviyeleri hakkında beyin fırtınası yapılmış ve ne şekilde ilerleyeceği kararlaştırılmıştır.
+- Söz konusu 2 ve 3. seviyeler için bir sonraki seviyeye kusursuzca geçişi sağlayacak oyun döngüsü kodlanmıştır.
+- Oyun UI'ları göze hitap edecek şekilde düzenlenmiştir.
+
+- **Sprint Retrospective:**
+- Takım içi daha aktif ve sık iletişimin gerekliliği üzerine bir görüşme yapılmıştır.
+- Yapılan toplantılarda oyunun kodları takım olarak incelenmiş ve kodlar üzerinde iyileştirmeler yapılmıştır.
+- Önceki sprintte Sprint Review'un GitHub'a eklenmesinin unutulduğu fark edilmiş, aynısının bu sprintte de gerçekleşmemesi için dikkat edilmiştir.
+
+- **Diğer Notlar**:
+- Sprint için belirlenen 200 puanlık görev yükü tamamlanmıştır.
+- Proje tamamlanmış ve build alınmıştır.
+- Daily Scrum Notları GitHub'a aktarılmıştır.
 ---
