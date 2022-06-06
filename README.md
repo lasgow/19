@@ -14,28 +14,28 @@ Takım 19
 
 ## Ürün İsmi
 
---Game Dev 3D--
+--DIY Hypercasual--
+(Do It Yourself Hypercasual)
 
 ## Ürün Açıklaması
+-Herkes oyun yapabilir fakat herkes iyi oyun yapamaz mottosuyla çıktığımız bu yolda ilk olarak, runner veya top-down mekanikli oyun yapmanın aslında ne kadar kolay olduğunu bu oyunu oynayan insanlara göstermek, daha önce hiç oyun yapmamış ve oyun yapmaya cesaret edemeyen insanları oyun oynatarak, sanal bir evrende bile olsa ilk oyunlarını yapmalarına cesaretlendiriyoruz. Oyun içinde karşımıza çıkan kodlar bu oyunun temel mekaniğinde kullanılan kodlardır. Bu kodları oyuncular birebir aynı şekilde scriptlerine aktarırsa, yön verebildikleri temel mekanikleri yapmış oluyorlar.
 
-- Oyunumuz runner türünde olup, yoldaki kapılardan geçerek, toplanabilir önemli şeyleri toplayarak ve bugları yok ederek oyun yaratma oyunudur.
--Oyunumuzun türünü, yolda topladığımız +experience kutularını sırtımızda stackleyip, onları bir köprü parçası olarak kullanarak belirleyebiliyoruz.
--Kendimize 3D Artist, Game Developerlar arasından bir ekip kuruyoruz. (bizi takip ediyorlar)
--Oyunda buglara karşı mücadele veriyoruz.
--Toplanabilir Collectiblelar ile masamızı ve bilgisayarımızı upgrade edebiliyoruz.
--Tercihli kapılardan geçerek Main Karakterimizi seçebiliyoruz.
+- Oyunumuz runner türünde olup, yoldaki kapılardan geçerek, toplanabilir önemli şeyleri toplayıp kendilerini geliştirip bir oyun yaratma oyunudur.
+-YouTube Tutorialler, Google Akademi Eğitimleri gibi toplanabilirleri toplayıp Internlükten -> Senior Game Developerlığa kadar çıkmaya çalışıyoruz.
+-Yoldaki Buglardan kaçınmaya çalışıyoruz.
+-Oyunda ilk kodumuzu yazıyoruz. İlerleyen levelda Runner mekaniğinin ardından Top-Down oyunlarda Joystick kullanımını gösteriyoruz.
+-Tercihli kapılardan geçerek yapmak istediğimiz oyunu kendi kararlarımızla oluşturabiliyoruz.
+-Oluşturduğumuz oyunlarda kullanılan assetleri kapılardan geçerek alıp öğreniyoruz.
+-Kendimize 3D Artist, Game Designerlar arasından bir ekip kuruyoruz.
+-En son aşamada oluşturduğumuz oyunu, Unity Video Player componenti kullanarak cloudda bulunan oyun videosunu internet üzerinden çekip, bir telefon ekranında görüyoruz. Oyunu publishledikten sonra da şu an günümüz mobil oyun dünyasında geçerli olan oyun metrikleri konusunda bilgilendiriyoruz ve oyundan tahmini ne kadar bir para kazandığını gösterebiliyoruz.
 
-Bu verdiğimiz kararlar doğrultusunda oyunun endgame aşamasında "Publish Game" kısmına geliyoruz.
-Kameramız elimizdeki telefona doğru yakınlaşıyor, ve oyun içinde verdiğimiz kararlara uygun bir oyunun videosunu sahne içindeki model telefonumuza koyuyoruz. 
-Yaptığımız oyunu oyun içinden izliyoruz. Oyun içi metrikler geliyor CPI&CPC Retention gibi.
-Eğer oyunu yaparken kaliteli developerlar alıp, bug çözümleri yaptıysak iyi bir oyun yapmış oluyoruz. İyi bir oyun sonucunda da Top List'e girip para kazanıyoruz.
 
 ## Ürün Özellikleri
 
-- Mobil & Desktop yönlendirme mekaniği
-- Karakterde stacklenme mekaniği
+- Mobilden oynanabilen yönlendirme mekaniği
+- Tercihli kapı mekanikleri
 - Oyunu yapacak ekibi toplama mekaniği
-- DoTween - Cinemachine - Unity in Video Player gibi özellikler.
+- DoTween  - Unity in Video Player.
 
 ## Hedef Kitle
 
