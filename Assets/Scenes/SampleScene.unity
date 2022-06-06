@@ -2101,8 +2101,8 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - name: Win
-    clip: {fileID: 8300000, guid: 84bc973c4f43e15499066563473bd01c, type: 3}
-    volume: 0.5
+    clip: {fileID: 8300000, guid: 577a8ed00643cd143bafd3f3f06e7c9d, type: 3}
+    volume: 0.2
     pitch: 1
     source: {fileID: 0}
 --- !u!82 &1298548542
