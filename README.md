@@ -18,16 +18,16 @@ Takım 19
 (Do It Yourself Hypercasual)
 
 ## Ürün Açıklaması
--Herkes oyun yapabilir fakat herkes iyi oyun yapamaz mottosuyla çıktığımız bu yolda ilk olarak, runner veya top-down mekanikli oyun yapmanın aslında ne kadar kolay olduğunu bu oyunu oynayan insanlara göstermek, daha önce hiç oyun yapmamış ve oyun yapmaya cesaret edemeyen insanları oyun oynatarak, sanal bir evrende bile olsa ilk oyunlarını yapmalarına cesaretlendiriyoruz. Oyun içinde karşımıza çıkan kodlar bu oyunun temel mekaniğinde kullanılan kodlardır. Bu kodları oyuncular birebir aynı şekilde scriptlerine aktarırsa, yön verebildikleri temel mekanikleri yapmış oluyorlar.
+- Herkes oyun yapabilir fakat herkes iyi oyun yapamaz mottosuyla çıktığımız bu yolda ilk olarak, runner veya top-down mekanikli oyun yapmanın aslında ne kadar kolay olduğunu bu oyunu oynayan insanlara göstermek, daha önce hiç oyun yapmamış ve oyun yapmaya cesaret edemeyen insanları oyun oynatarak, sanal bir evrende bile olsa ilk oyunlarını yapmalarına cesaretlendiriyoruz. Oyun içinde karşımıza çıkan kodlar bu oyunun temel mekaniğinde kullanılan kodlardır. Bu kodları oyuncular birebir aynı şekilde scriptlerine aktarırsa, yön verebildikleri temel mekanikleri yapmış oluyorlar.
 
 - Oyunumuz runner türünde olup, yoldaki kapılardan geçerek, toplanabilir önemli şeyleri toplayıp kendilerini geliştirip bir oyun yaratma oyunudur.
--YouTube Tutorialler, Google Akademi Eğitimleri gibi toplanabilirleri toplayıp Internlükten -> Senior Game Developerlığa kadar çıkmaya çalışıyoruz.
--Yoldaki Buglardan kaçınmaya çalışıyoruz.
--Oyunda ilk kodumuzu yazıyoruz. İlerleyen levelda Runner mekaniğinin ardından Top-Down oyunlarda Joystick kullanımını gösteriyoruz.
--Tercihli kapılardan geçerek yapmak istediğimiz oyunu kendi kararlarımızla oluşturabiliyoruz.
--Oluşturduğumuz oyunlarda kullanılan assetleri kapılardan geçerek alıp öğreniyoruz.
--Kendimize 3D Artist, Game Designerlar arasından bir ekip kuruyoruz.
--En son aşamada oluşturduğumuz oyunu, Unity Video Player componenti kullanarak cloudda bulunan oyun videosunu internet üzerinden çekip, bir telefon ekranında görüyoruz. Oyunu publishledikten sonra da şu an günümüz mobil oyun dünyasında geçerli olan oyun metrikleri konusunda bilgilendiriyoruz ve oyundan tahmini ne kadar bir para kazandığını gösterebiliyoruz.
+- YouTube Tutorialler, Google Akademi Eğitimleri gibi toplanabilirleri toplayıp Internlükten -> Senior Game Developerlığa kadar çıkmaya çalışıyoruz.
+- Yoldaki Buglardan kaçınmaya çalışıyoruz.
+- Oyunda ilk kodumuzu yazıyoruz. İlerleyen levelda Runner mekaniğinin ardından Top-Down oyunlarda Joystick kullanımını gösteriyoruz.
+- Tercihli kapılardan geçerek yapmak istediğimiz oyunu kendi kararlarımızla oluşturabiliyoruz.
+- Oluşturduğumuz oyunlarda kullanılan assetleri kapılardan geçerek alıp öğreniyoruz.
+- Kendimize 3D Artist, Game Designerlar arasından bir ekip kuruyoruz.
+- En son aşamada oluşturduğumuz oyunu, Unity Video Player componenti kullanarak cloudda bulunan oyun videosunu internet üzerinden çekip, bir telefon ekranında görüyoruz. Oyunu publishledikten sonra da şu an günümüz mobil oyun dünyasında geçerli olan oyun metrikleri konusunda bilgilendiriyoruz ve oyundan tahmini ne kadar bir para kazandığını gösterebiliyoruz.
 
 
 ## Ürün Özellikleri
