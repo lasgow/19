@@ -111,6 +111,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 - ![Backlog 3](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-3rd.png)
 - [Sprint 1&2&3 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotes.docx?raw=true)
 - Üçüncü Sprint Sonu: [Video İçin Tıklayın](https://drive.google.com/file/d/1ENp4mepnbnZJ1o_5SK5BOTjahWTmZ-W9/view)
+- Kullanılan Assetler&Sesler&Modeller Listesi [Kaynak Listesi İçin Tıklayın](https://github.com/lasgow/19/blob/main/urun-gorselleri/kullanilan-kaynaklar.txt)
 
 
  **Sprint Review**: 
