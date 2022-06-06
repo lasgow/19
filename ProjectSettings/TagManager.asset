@@ -8,6 +8,15 @@ TagManager:
   - BadCollect
   - CollectInfo
   - BlackScreen
+  - QuizTime
+  - QuizQM
+  - Cpi
+  - Retention
+  - Download
+  - Playtime
+  - PlayerTutorial
+  - RightSlot
+  - LeftSlot
   layers:
   - Default
   - TransparentFX

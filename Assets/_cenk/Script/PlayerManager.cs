@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using ElephantSDK;
-using MoreMountains.NiceVibrations;
 using TMPro;
 using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance;
-    private PathCreation.Examples.PathFollower pathFollower;
+    public PathCreation.Examples.PathFollower pathFollower;
 
     public Animator animator;
 
@@ -32,7 +31,7 @@ public class PlayerManager : MonoBehaviour
     public GameObject[] changeParticle;
     public GameObject rainParticle;
     public GameObject confParticle;
-    private bool canRotate;
+    public bool canRotate;
     [Header("Chars")]
     public GameObject activeModel;
     public GameObject wheelLeft;
@@ -44,11 +43,16 @@ public class PlayerManager : MonoBehaviour
     public GameObject srDeveloperParticle;
     public GameObject gameGuru;
     public GameObject gameGuruParticle;
+
+    [SerializeField]
+    public GameObject leftSlot;
+    public GameObject rightSlot;
+
     private bool isClick;
     private float mouseX;
     private Vector3 move;
     [SerializeField] GameObject rawImage;
-
+    [SerializeField] bool isLevel3;
     private void Awake()
     {
         instance = this;
@@ -85,12 +89,9 @@ public class PlayerManager : MonoBehaviour
                     CanvasManager.instance.guide.SetActive(false);
 
                     Elephant.LevelStarted((LevelManager.GetLevelID() + 1));
-
-                    //animator.SetBool("Walk", true);
                 }
 
                 var pos = transform.localPosition;
-
                 transform.localPosition = new Vector3(Mathf.Clamp(pos.x + touch.deltaPosition.x * xSpeed * Time.deltaTime, -4, 4), 0, pos.z);
 
             }
@@ -107,16 +108,16 @@ public class PlayerManager : MonoBehaviour
 
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Collect"))
         {
             other.GetComponent<Collectable>().Collect();
-
+            other.GetComponent<BoxCollider>().enabled = false;
             FillBar(other.GetComponent<Collectable>().touristValue);
 
-            MMVibrationManager.Haptic(HapticTypes.LightImpact);
-
+            
             other.transform.DOScale(0, 0.20f).SetEase(Ease.Linear);
             other.transform.DOMove(itemCollectRef.transform.position, 0.20f).SetEase(Ease.Linear).OnComplete(() =>
             {
@@ -128,11 +129,9 @@ public class PlayerManager : MonoBehaviour
         if (other.CompareTag("BadCollect"))
         {
             other.GetComponent<Obstacle>().Collect();
-            MMVibrationManager.Haptic(HapticTypes.LightImpact);
-            //CanvasManager.instance.CreateCollectTxt(transform.position, Color.red, "-" + 5);
             if(canRotate)
             {
-            FillBar(-5);
+            //FillBar(-5);
             }
             
             other.transform.DOScale(0, 0.20f).SetEase(Ease.Linear);
@@ -148,9 +147,6 @@ public class PlayerManager : MonoBehaviour
             other.GetComponent<Collectable>().Collect();
 
             FillBar(other.GetComponent<Collectable>().touristValue);
-
-            MMVibrationManager.Haptic(HapticTypes.LightImpact);
-
             other.transform.DOScale(0, 0.20f).SetEase(Ease.Linear);
             other.transform.DOMove(itemCollectRef.transform.position, 0.20f).SetEase(Ease.Linear).OnComplete(() =>
             {
@@ -172,9 +168,71 @@ public class PlayerManager : MonoBehaviour
             Camera.main.transform.DOLocalRotate(new Vector3(15, 0, 0), 1f);
             CompletePanel.instance.OpenPanel();
             rawImage.SetActive(true);
-            rawImage.transform.DOScale(new Vector3(0.11f, 0.115f, 0.115f), 1f);
+            if(!isLevel3)
+            {
+                rawImage.transform.DOScale(new Vector3(0.11f, 0.115f, 0.115f), 1f);
+            }
+            else
+            {
+                rawImage.transform.DOScale(new Vector3(0.11f, 0.1555f, 0.115f), 1f);
+            }
+
         }
-        
+
+        if (other.CompareTag("QuizTime"))
+        {
+            Destroy(other.gameObject);
+        }
+
+        if(other.CompareTag("QuizQM"))
+        {
+            xSpeed = 0;
+            pathFollower.speed = 0;
+            transform.DOLocalMoveX(0, 0.25f);
+            canRotate = false;
+            other.transform.DOScale(Vector3.zero, 0.25f).OnComplete(() => 
+            {
+                Destroy(other.gameObject);
+            });
+            Instantiate(GameManager.instance.explosion, other.transform.position, Quaternion.identity);
+            FindObjectOfType<AudioManager>().Play("Pop");
+            QuizSection.instance.questionUIUp();            
+        }
+
+        if(other.CompareTag("LeftSlot"))
+        {
+            FindObjectOfType<AudioManager>().Play("Pop");
+            other.transform.GetComponent<BoxCollider>().enabled = false;
+            other.transform.DOMoveZ(other.transform.position.z - 3f, 0.25f).SetEase(Ease.Linear).OnComplete(() => 
+            {
+                other.transform.parent = transform;
+                other.transform.DORotate(leftSlot.transform.eulerAngles, 1f);
+                other.transform.DOLocalMoveX(-1.75f, 0.5f).SetEase(Ease.Linear);
+                other.transform.DOLocalMoveZ(-2.5f, 0.5f).SetEase(Ease.Linear).OnComplete(() => 
+                { 
+                
+                });
+                canRotate = true;
+                xSpeed = 1.2f;
+
+            });
+        }
+
+        if (other.CompareTag("RightSlot"))
+        {
+            FindObjectOfType<AudioManager>().Play("Pop");
+            other.transform.GetComponent<BoxCollider>().enabled = false;
+            other.transform.DOMoveZ(other.transform.position.z + 3f, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+            {
+                other.transform.parent = transform;
+                other.transform.DORotate(rightSlot.transform.eulerAngles, 1f);
+                other.transform.DOLocalMoveZ(-2.5f, 0.5f).SetEase(Ease.Linear);
+                other.transform.DOLocalMoveX(1.75f, 0.5f).SetEase(Ease.Linear).OnComplete(() =>
+                {
+
+                });
+            });
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -203,7 +261,6 @@ public class PlayerManager : MonoBehaviour
                 //
                 pathFollower.speed = 7f;
                 nameTag.SetText("INTERN");
-                //villager3D.GetComponent<Animator>().SetBool("Walk", true);
 
                 touristCounter = (int)totalAmount - 5;
             }
@@ -241,9 +298,6 @@ public class PlayerManager : MonoBehaviour
 
         if (touristCounter >= totalAmount && intern.activeInHierarchy)
         {
-           // villager3D.SetActive(false);
-           // villager3D.transform.DORotate((Vector3.zero), 0);
-           // viking3D.SetActive(true);
             StartCoroutine(ChangeActiveModel(jrDeveloper,intern));
             var transformParticle = Instantiate(changeParticle[0], itemCollectRef.transform.position,Quaternion.identity);
             transformParticle.transform.parent = itemCollectRef.transform;
@@ -255,9 +309,6 @@ public class PlayerManager : MonoBehaviour
         }
         if (touristCounter >= totalAmount && jrDeveloper.activeInHierarchy)
         {
-            //viking3D.SetActive(false);
-            //viking3D.transform.DORotate((Vector3.zero), 0);
-            //ragnar3D.SetActive(true);
             StartCoroutine(ChangeActiveModel(developer,jrDeveloper));
             var transformParticle = Instantiate(changeParticle[Random.Range(0, 1)], itemCollectRef.transform.position, Quaternion.identity);
             transformParticle.transform.parent = itemCollectRef.transform;
@@ -270,9 +321,6 @@ public class PlayerManager : MonoBehaviour
 
         if (touristCounter >= totalAmount && developer.activeInHierarchy)
         {
-            //ragnar3D.SetActive(false);
-            //ragnar3D.transform.DORotate((Vector3.zero), 0);
-            //thor3D.SetActive(true);
             StartCoroutine(ChangeActiveModel(srDeveloper,developer));
             var transformParticle = Instantiate(srDeveloperParticle, itemCollectRef.transform.position, Quaternion.identity);
             transformParticle.transform.parent = itemCollectRef.transform;
@@ -291,7 +339,6 @@ public class PlayerManager : MonoBehaviour
     public void MoveForward()
     {
         Camera.main.transform.SetParent(transform.parent);
-        //Camera.main.transform.SetAsLastSibling();
         CameraFollow.instance.target = transform;
         CameraFollow.instance.enabled = true;
         pathFollower.enabled = true;
@@ -309,9 +356,6 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         canRotate = true;
         activeModel.transform.DOLocalMove(new Vector3(0, 0, 0), 0.1f).SetEase(Ease.Linear);
-        //animator = currentModel.GetComponent<Animator>();
-        //animator.SetBool("Walk", true);
-        //animator.SetTrigger("Spin");
     }
 
     private void MovementAndSpeedControl()
@@ -383,13 +427,6 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void ClampPosition()
-    {
-        Vector3 clampedPosition = transform.position;
-        clampedPosition.x = Mathf.Clamp(clampedPosition.x, -4f, 4f);
-        transform.position = clampedPosition;
-    }
-
     public void InfoPanelOpen()
     {
         pathFollower.speed = 0f;
@@ -402,7 +439,7 @@ public class PlayerManager : MonoBehaviour
     public void InfoPanelClose()
     {
         xSpeed = 1.2f;
-        pathFollower.speed = 8.5f;
+        pathFollower.speed = 12.5f;
         canRotate = true;
         Camera.main.GetComponent<Camera>().DOFieldOfView(60, 1f);
     }
@@ -432,7 +469,6 @@ public class PlayerManager : MonoBehaviour
         canRotate = false;
         pathFollower.speed = -12.5f;
         DoTweenIncrease(pathFollower.speed, -8, 1f);
-        Debug.Log("aaa");
     }
 
 }

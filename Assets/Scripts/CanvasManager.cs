@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using DG.Tweening;
-using MoreMountains.NiceVibrations;
 using GameAnalyticsSDK;
 
 public class CanvasManager : MonoBehaviour
@@ -29,6 +28,7 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] public TextMeshProUGUI retentionValue;
     [SerializeField] public TextMeshProUGUI totalDownloadValue;
     [SerializeField] public TextMeshProUGUI playtimeValue;
+    [SerializeField] public TextMeshProUGUI revenueValue;
     private void Awake()
     {
         instance = this;

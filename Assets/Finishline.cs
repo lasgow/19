@@ -8,6 +8,7 @@ public class Finishline : MonoBehaviour
     [SerializeField] string retentionValue;
     [SerializeField] string totalDownloadValue;
     [SerializeField] string playtimeValue;
+    [SerializeField] string revenueValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +25,12 @@ public class Finishline : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("Win");
             CanvasManager.instance.cpiValue.SetText(cpiValue);
             CanvasManager.instance.retentionValue.SetText(retentionValue);
             CanvasManager.instance.totalDownloadValue.SetText(totalDownloadValue);
             CanvasManager.instance.playtimeValue.SetText(playtimeValue);
+            CanvasManager.instance.revenueValue.SetText(revenueValue);
         }
     }
 }

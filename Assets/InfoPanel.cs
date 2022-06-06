@@ -27,6 +27,7 @@ public class InfoPanel : MonoBehaviour
 
     public void ClosePanel()
     {
+        FindObjectOfType<AudioManager>().Play("Win");
         transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack).OnComplete(() =>
         {
             PlayerManager.instance.InfoPanelClose();

@@ -14,7 +14,6 @@ public class Collectable : MonoBehaviour
         {
             highlightPlane.SetActive(false);
         }
-        
-        //CanvasManager.instance.CreateCollectTxt(LevelManager.instance.GetActiveLevel().player.transform.position,Color.green,"+"+touristValue);
+
     }
 }

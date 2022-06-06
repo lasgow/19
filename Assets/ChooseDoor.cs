@@ -30,6 +30,7 @@ public class ChooseDoor : MonoBehaviour
             if (anyNextDoor)
             {
                 nextDoor.gameObject.SetActive(true);
+                PlayerManager.instance.pathFollower.speed = 9f;
             }
             transform.DOScale(Vector3.zero, 0.5f).OnComplete(() =>
             {

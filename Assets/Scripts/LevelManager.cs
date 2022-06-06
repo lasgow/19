@@ -26,10 +26,9 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         GameAnalytics.Initialize();
-        GameManager.GetMoney();
         levelHolder = transform.GetChild(0).transform;
         Application.targetFrameRate = 120;
-        //LoadLevel(GetLevelID());
+        LoadLevel(GetLevelID());
         
 
     }
@@ -103,7 +102,7 @@ public class LevelManager : MonoBehaviour
 
         CanvasManager.instance.guide.SetActive(true);
 
-        CanvasManager.instance.levelTxt.SetText("LEVEL " + (GetLevelTotalID()));
+        //CanvasManager.instance.levelTxt.SetText("LEVEL " + (GetLevelTotalID()));
     }
 
     public void RestartCurrentLevel()
