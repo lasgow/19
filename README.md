@@ -106,24 +106,26 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 ---
 
 # Sprint 3
+- **Sprint içinde tamamlanması tahmin edilen puan**: 200 Puan
+- **Sprint board update**: Sprint board screenshotları: 
 - ![Backlog 3](https://github.com/lasgow/19/blob/main/urun-gorselleri/miro-table-3rd.png)
 - [Sprint 1&2&3 Daily Scrum Chats](https://github.com/lasgow/19/blob/main/daily-scrums-documents/Takim19-DailyScrumMeetingNotes.docx?raw=true)
--  Üçüncü Sprint Sonu: [Video İçin Tıklayın](https://drive.google.com/file/d/1ENp4mepnbnZJ1o_5SK5BOTjahWTmZ-W9/view)
+- Üçüncü Sprint Sonu: [Video İçin Tıklayın](https://drive.google.com/file/d/1ENp4mepnbnZJ1o_5SK5BOTjahWTmZ-W9/view)
 
 
-- **Sprint Review**: 
-- 2. sprintte yapılan hatalar üzerinden geçilmiş, mevcut sprinti eksiksiz tamamlamak için gerekli adımlar listelenmiştir.
+ **Sprint Review**: 
+- İkinci sprintte yapılan hatalar üzerinden geçilmiş, mevcut sprinti eksiksiz tamamlamak için gerekli adımlar listelenmiştir.
 - Proje için gerekli particle effect ve sesler için araştırmas yapılıp karar verilen dosyalar oyuna eklenmiştir.
 - Oyunun 2 ve 3. seviyeleri hakkında beyin fırtınası yapılmış ve ne şekilde ilerleyeceği kararlaştırılmıştır.
 - Söz konusu 2 ve 3. seviyeler için bir sonraki seviyeye kusursuzca geçişi sağlayacak oyun döngüsü kodlanmıştır.
 - Oyun UI'ları göze hitap edecek şekilde düzenlenmiştir.
 
-- **Sprint Retrospective:**
+ **Sprint Retrospective:**
 - Takım içi daha aktif ve sık iletişimin gerekliliği üzerine bir görüşme yapılmıştır.
 - Yapılan toplantılarda oyunun kodları takım olarak incelenmiş ve kodlar üzerinde iyileştirmeler yapılmıştır.
 - Önceki sprintte Sprint Review'un GitHub'a eklenmesinin unutulduğu fark edilmiş, aynısının bu sprintte de gerçekleşmemesi için dikkat edilmiştir.
 
-- **Diğer Notlar**:
+ **Diğer Notlar**:
 - Sprint için belirlenen 200 puanlık görev yükü tamamlanmıştır.
 - Proje tamamlanmış ve build alınmıştır.
 - Daily Scrum Notları GitHub'a aktarılmıştır.
